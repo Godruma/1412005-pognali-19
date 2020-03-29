@@ -5,9 +5,9 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-    <a class="page-heder__logo" href="#">
+    <a class="page-header__logo" href="#">
     <header class="page-header">
-      <img class="page-heder__logo-image" width="100" height="20" src="https://via.placeholder.com/150x150" alt="Погнали - поиск попутчиков онлайн">
+      <img class="page-header__logo-image" width="100" height="20" src="https://via.placeholder.com/150x150" alt="Погнали - поиск попутчиков онлайн">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -37,43 +37,189 @@
     <main class="page-main">
 
       <section class="hero-block">
-      <h1 class="hero-block__title">В путешествие с крутыми попутчиками!</h1>
-      <div class="hero-block__image hero-image">
-        <div class="hero-image__tablet"></div>
-        <div class="hero-image__man"></div>
-      </div>
-      <div class="main-nav__buttons hero-block__buttons">
-        <button class="main-nav__call" type="button">8 800 555-86-28</button>
-        <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
-        <button class="main-nav__authorization" type="button"></button>
-      </div>
-      <blockquote class="hero-block__quote">
-        <p class="hero-hero-block__quote--text">
-          «Лучшее приложение, что я видел в жизни!»
-        </p>
-        <p class="hero-hero-block__quote--author">
-          Мурат Эльтазин главный редактор газеты «гаджетлайф»
-        </p>
-      </blockquote>
-      <div class="hero-block__features hero-features">
-        <ul>
-          <li class="hero-features__item">Выберите направление <span class="hero-features__number">1</span></li>
-          <li class="hero-features__item">Изучите идеи путешественников <span class="hero-features__number">2</span></li>
-          <li class="hero-features__item">Находите тех, кто похож на вас <span class="hero-features__number">3</span></li>
-          <li class="hero-features__item">Путешествуйте вместе! <span class="hero-features__number">4</span></li>
-        </ul>
-      </div>
+        <div class="hero-block__wrapper">
+          <h1 class="hero-block__title">В путешествие с крутыми попутчиками!</h1>
+          <div class="hero-block__image hero-image">
+            <div class="hero-image__tablet"></div>
+            <div class="hero-image__man"></div>
+          </div>
+          <div class="main-nav__buttons hero-block__buttons">
+            <button class="main-nav__call" type="button">8 800 555-86-28</button>
+            <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
+            <button class="main-nav__authorization" type="button"></button>
+          </div>
+          <blockquote class="hero-block__quote">
+            <p class="hero-hero-block__quote--text">
+              «Лучшее приложение, что я видел в жизни!»
+            </p>
+            <p class="hero-hero-block__quote--author">
+              Мурат Эльтазин главный редактор газеты «гаджетлайф»
+            </p>
+          </blockquote>
+          <div class="hero-block__features hero-features">
+            <ul>
+              <li class="hero-features__item">Выберите направление <span class="hero-features__number">1</span></li>
+              <li class="hero-features__item">Изучите идеи путешественников <span class="hero-features__number">2</span></li>
+              <li class="hero-features__item">Находите тех, кто похож на вас <span class="hero-features__number">3</span></li>
+              <li class="hero-features__item">Путешествуйте вместе! <span class="hero-features__number">4</span></li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="about">
-        <div class="about__blue-square"></div>
-        <h2 class="about__title">О сервисе</h2>
-        <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-        <b class="about__text-bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
-        <button class="about__button" type="button"></button>
-        <div class="about__blue-square second-blue-square"></div>
-        <img class="about__image" src="https://via.placeholder.com/150x150" width="435" height="667">
+        <div class="about__wrapper">
+          <div class="about__blue-square square-bg"></div>
+          <h2 class="about__title orange-title">О сервисе</h2>
+          <p class="about__text text-info">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+          <b class="about__text-bold text-info--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</b>
+          <button class="about__btn yellow-btn" type="button">Подробнее <img class="yellow-btn__arrow" width="10" height="14" src="https://via.placeholder.com/150x150"></button>
+          <div class="about__blue-square-2 square-bg"></div>
+          <img class="about__image" src="https://via.placeholder.com/150x150" width="435" height="667">
+        </div>
       </section>
+
+      <section class="destinations">
+        <div class="destinations_wrapper">
+          <h2 class="destinations__title orange-title">Направления</h2>
+          <p class="desinations__text text-info">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <div class="destinations__item destination-card">
+            <div class="destination-card__image"></div>
+            <div class="destination-card__flag"></div>
+            <div class="destination-card__info card-text">
+              <h3 class="card-text__title">Тайланд</h3>
+              <p class="card-text__subtitle">Джунгли зовут!</p>
+              <div class="card-text__number">18321</div>
+            </div>
+          </div>
+          <div class="destinations__item destination-card">
+            <div class="destination-card__image"></div>
+            <div class="destination-card__flag"></div>
+            <div class="destination-card__info card-text">
+              <h3 class="card-text__title">Франция</h3>
+              <p class="card-text__subtitle">Трэ бьен, манифик!</p>
+              <div class="card-text__number">12518</div>
+            </div>
+          </div>
+          <div class="destinations__item destination-card">
+            <div class="destination-card__image"></div>
+            <div class="destination-card__flag"></div>
+            <div class="destination-card__info card-text">
+              <h3 class="card-text__title">Чехия</h3>
+              <p class="card-text__subtitle">Закоулки старой Европы</p>
+              <div class="card-text__number">5326</div>
+            </div>
+          </div>
+          <button class="destinations__show-all-btn yellow-btn" type="button">Показать все <img class="yellow-btn__arrow" width="10" height="14" src="https://via.placeholder.com/150x150"></button>
+        </div>
+      </section>
+
+      <section class="companion">
+        <div class="companion__wrapper">
+          <div class="companion-info">
+            <div class="companion-info__blue-square square-bg"></div>
+            <h2 class="companion-info__title orange-title">Попутчики</h2>
+            <p class="companion-info__text text-info">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга</p>
+            <b class="companion-info__text-bold text-info--bold">Теперь можно легко найти единомышленников!</b>
+          </div>
+          <div class="companion-card">
+            <div class="companion-card__image "></div>
+            <div class="companion-card__level circle-level">
+              <div class="circle-level__number">99</div>
+              <hr class="circle-level__line">
+              <span class="circle-level__text">level</span>
+            </div>
+            <div class="companion-card__flags flags">
+              <ul>
+                <li class="flags__item-1"></li>
+                <li class="flags__item-2"></li>
+                <li class="flags__item-3"></li>
+              </ul>
+            </div>
+            <div class="companion-card__name name"><img class="name__online-indicator" src="https://via.placeholder.com/150x150" width="5" height="5" > Таня Фирсова</div>
+            <ul class="companion-card__tags">
+              <li class="companion-card__tags--1">#ЗОЖ</li>
+              <li class="companion-card__tags--2">#ПП</li>
+              <li class="companion-card__tags--3">#Фитнес</li>
+              <li class="companion-card__tags--4">#пляж</li>
+              <li class="companion-card__tags--5">#авокадо</li>
+              <li class="companion-card__tags--6">#смузи</li>
+            </ul>
+            <ul class="companion-card__icons companion-icons">
+              <li class="companion-icons__plane--active"></li>
+              <li class="companion-icons__train"></li>
+              <li class="companion-icons__bike"></li>
+              <li class="companion-icons__foot"></li>
+            </ul>
+          </div>
+          <div class="companion-card">
+            <div class="companion-card__image "></div>
+            <div class="companion-card__level circle-level">
+              <div class="circle-level__number">80</div>
+              <hr class="circle-level__line">
+              <span class="circle-level__text">level</span>
+            </div>
+            <div class="companion-card__flags flags">
+              <ul>
+                <li class="flags__item-1"></li>
+                <li class="flags__item-2"></li>
+              </ul>
+            </div>
+            <div class="companion-card__name name"><img class="name__online-indicator" src="https://via.placeholder.com/150x150" width="5" height="5" > Петя Демин</div>
+            <ul class="companion-card__tags">
+              <li class="companion-card__tags--1">#бургер</li>
+              <li class="companion-card__tags--2">#бар</li>
+              <li class="companion-card__tags--3">#футбол</li>
+              <li class="companion-card__tags--4">#концерт</li>
+              <li class="companion-card__tags--5">#крафт</li>
+            </ul>
+            <ul class="companion-card__icons companion-icons">
+              <li class="companion-icons__plane--active"></li>
+              <li class="companion-icons__train--active"></li>
+              <li class="companion-icons__bike"></li>
+              <li class="companion-icons__foot--active"></li>
+            </ul>
+          </div>
+          <button class="companion-card__btn yellow-btn" type="button">Показать всех<img class="yellow-btn__arrow" width="10" height="14" src="https://via.placeholder.com/150x150"></button>
+        </div>
+      </section>
+
+      <section class="rates">
+        <div class="rates__wrapper">
+          <h2 class="rates____title orange-title">Добавьте свой профиль</h2>
+          <div class="rates__icon"></div>
+          <ul class="rates__list list">
+            <li class="list__number">1</li>
+            <li class="list__text">Базовое размещение</li>
+            <li class="list__price">Бесплатно</li>
+          </ul>
+          <ul class="rates__list list">
+            <li class="list__number">2</li>
+            <li class="list__text">Вывод на первых позициях</li>
+            <li class="list__price">99 руб./мес</li>
+          </ul>
+          <ul class="rates__list list">
+            <li class="list__number">3</li>
+            <li class="list__text">Кастомный цвет карточки</li>
+            <li class="list__price">59 руб./мес</li>
+          </ul>
+          <a class="rates__bussines" href="#" ><img class="rates__bussines-icon" src="https://via.placeholder.com/150x150" width="70" height="70" >Показать тарифы для бизнеса</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <img class="footer__logo-image" width="96" height="15" src="https://via.placeholder.com/150x150" alt="Погнали - поиск попутчиков онлайн">
+        <ul class="social-icon">
+          <li class="social-icon__fb"><a href="#"></a></li>
+          <li class="social-icon__vk"><a href="#"></a></li>
+          <li class="social-icon__insta"><a href="#"></a></li>
+        </ul>
+        <hr class="footer__separate">
+        <p class="footer__dev">Разработано</p>
+        <a class="footer__dev-logo" href="#"><img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип разработчика сайта"></a>
+      </footer>
+
+
 
     </main>
 
