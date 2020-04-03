@@ -2,41 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-    <a class="page-header__logo" href="#">
+
     <header class="page-header">
+      <a class="page-header__logo" href="#"></a>
       <img class="page-header__logo-image" width="100" height="20" src="https://via.placeholder.com/150x150" alt="Погнали - поиск попутчиков онлайн">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <span class="main-nav__line-decor"></span>
-        <ul class="main-nav__list site-list">
-          <li class="site-list_item">О сервисе</li>
-          <li class="site-list_item">Направления</li>
-          <li class="site-list_item">Попутчики</li>
-        </ul>
-        <div class="main-nav__buttons">
-          <button class="main-nav__call" type="button">8 800 555-86-28</button>
-          <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
-          <button class="main-nav__authorization" type="button"></button>
-        </div>
-        <div class="main-nav__social social-icon">
-          <ul>
-            <li class="social-icon__item--fb"></li>
-            <li class="social-icon__item--vk"></li>
-            <li class="social-icon__item--insta"></li>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <span class="main-nav__line-decor"></span>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html">О сервисе</a></li>
+            <li class="site-list__item"><a href="form.html">Направления</a></li>
+            <li class="site-list__item"><a href="#">Попутчики</a></li>
           </ul>
+          <div class="main-nav__buttons">
+            <button class="main-nav__call" type="button">8 800 555-86-28</button>
+            <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
+            <button class="main-nav__authorization" type="button">Авторизация</button>
+          </div>
+          <div class="main-nav__social social-icon">
+            <ul>
+              <li class="social-icon__item--fb"></li>
+              <li class="social-icon__item--vk"></li>
+              <li class="social-icon__item--insta"></li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div class="page-title">
+        <h1 class="page-title__text">Попутчики</h1>
+        <a href="" class="page-header__back">На главную <img class="page-header__back-icon" src="https://via.placeholder.com/150x150" width="35" height="20"></a>
+        <div class="page-title__underline"></div>
       </div>
-    </nav>
-    <div class="page-title">
-      <h1 class="page-title__text">Попутчики</h1>
-      <a href="" class="page-header__back">На главную <img class="page-header__back-icon" src="https://via.placeholder.com/150x150" width="35" height="20"></a>
-      <div class="page-title__underline"></div>
-    </div>
     </header>
 
     <main class="page-main">
@@ -47,12 +48,12 @@
       </section>
 
       <section class="catalog">
-        <div class="catalog__card travelmates-card">
+        <div class="catalog-card travelmates-card">
           <img class="travelmates-card__avatar" src="https://via.placeholder.com/150x150" width="70" height="70" >
           <div class="travelmates-card__name name">
             <img class="name__online-indicator" src="https://via.placeholder.com/150x150" width="5" height="5" >Таня Фирсова
           </div>
-          <ul class="catalog__card__tags tags">
+          <ul class="catalog-card__tags tags">
             <li class="tags__item">#ЗОЖ</li>
             <li class="tags__item">#ПП</li>
             <li class="tags__item">#Фитнес</li>
@@ -64,7 +65,7 @@
             <span class="catalog-card__like-count">1.5 m</span>
           </div>
           <div class="catalog-card__want">
-            <p class="catalog-card__want-text cart-text">хочет посетить:</p>
+            <p class="catalog-card__want-text card-text">хочет посетить:</p>
             <ul class="catalog-card__want-list want-travel">
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Шри-ланка</li>
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Таиланд</li>
@@ -72,7 +73,7 @@
             </ul>
           </div>
           <div class="catalog-card__transport">
-            <p class="catalog-card__transport-text cart-text">транспорт:</p>
+            <p class="catalog-card__transport-text card-text">транспорт:</p>
             <ul class="catalog-card__icons transport-icons">
               <li class="transport-icons__plane--active"></li>
               <li class="transport-icons__train"></li>
@@ -80,7 +81,7 @@
               <li class="transport-icons__foot"></li>
             </ul>
           </div>
-          <p class="catalog-card__level-text cart-text">левел:</p>
+          <p class="catalog-card__level-text card-text">левел:</p>
           <div class="catalog-card__level circle-level">
             <div class="circle-level__number">99</div>
             <hr class="circle-level__line">
@@ -89,10 +90,10 @@
           <button class="catalog-card__btn yellow-btn" type="button">Позвать!</button>
         </div>
 
-        <div class="catalog__card travelmates-card">
+        <div class="catalog-card travelmates-card">
           <img class="travelmates-card__avatar" src="https://via.placeholder.com/150x150" width="70" height="70" >
           <div class="travelmates-card__name name"><img class="name__online-indicator" src="https://via.placeholder.com/150x150" width="5" height="5" >Петя Демин</div>
-          <ul class="catalog__card__tags tags">
+          <ul class="catalog-card__tags tags">
             <li class="tags__item">#бургер</li>
             <li class="tags__item">#бар</li>
             <li class="tags__item">#футбол</li>
@@ -103,14 +104,14 @@
             <span class="catalog-card__like-count">1500</span>
           </div>
           <div class="catalog-card__want">
-            <p class="catalog-card__want-text cart-text">хочет посетить:</p>
+            <p class="catalog-card__want-text card-text">хочет посетить:</p>
             <ul class="catalog-card__want-list want-travel">
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Бельгия</li>
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Чехия</li>
             </ul>
           </div>
           <div class="catalog-card__transport">
-            <p class="catalog-card__transport-text cart-text">транспорт:</p>
+            <p class="catalog-card__transport-text card-text">транспорт:</p>
             <ul class="catalog-card__icons transport-icons">
               <li class="transport-icons__plane--active"></li>
               <li class="transport-icons__train--active"></li>
@@ -118,7 +119,7 @@
               <li class="transport-icons__foot--active"></li>
             </ul>
           </div>
-          <p class="catalog-card__level-text cart-text">левел:</p>
+          <p class="catalog-card__level-text card-text">левел:</p>
           <div class="catalog-card__level circle-level">
             <div class="circle-level__number">80</div>
             <hr class="circle-level__line">
@@ -127,10 +128,10 @@
           <button class="catalog-card__btn yellow-btn" type="button">Позвать!</button>
         </div>
 
-        <div class="catalog__card travelmates-card">
+        <div class="catalog-card travelmates-card">
           <img class="travelmates-card__avatar" src="https://via.placeholder.com/150x150" width="70" height="70" >
           <div class="travelmates-card__name name"><img class="name__online-indicator" src="https://via.placeholder.com/150x150" width="5" height="5" >Марк Смолов</div>
-          <ul class="catalog__card__tags tags">
+          <ul class="catalog-card__tags tags">
             <li class="tags__item">#рэп</li>
             <li class="tags__item">#тату</li>
             <li class="tags__item">#хайпбист</li>
@@ -141,7 +142,7 @@
             <span class="catalog-card__like-count">170</span>
           </div>
           <div class="catalog-card__want">
-            <p class="catalog-card__want-text cart-text">хочет посетить:</p>
+            <p class="catalog-card__want-text card-text">хочет посетить:</p>
             <ul class="catalog-card__want-list want-travel">
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">США</li>
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Австралия</li>
@@ -149,7 +150,7 @@
             </ul>
           </div>
           <div class="catalog-card__transport">
-            <p class="catalog-card__transport-text cart-text">транспорт:</p>
+            <p class="catalog-card__transport-text card-text">транспорт:</p>
             <ul class="catalog-card__icons transport-icons">
               <li class="transport-icons__plane--active"></li>
               <li class="transport-icons__train"></li>
@@ -157,7 +158,7 @@
               <li class="transport-icons__foot"></li>
             </ul>
           </div>
-          <p class="catalog-card__level-text cart-text">левел:</p>
+          <p class="catalog-card__level-text card-text">левел:</p>
           <div class="catalog-card__level circle-level">
             <div class="circle-level__number">25</div>
             <hr class="circle-level__line">
@@ -166,10 +167,10 @@
           <button class="catalog-card__btn yellow-btn" type="button">Позвать!</button>
         </div>
 
-        <div class="catalog__card travelmates-card">
+        <div class="catalog-card travelmates-card">
           <img class="travelmates-card__avatar" src="https://via.placeholder.com/150x150" width="70" height="70" >
           <div class="travelmates-card__name name"><img class="name__online-indicator" src="https://via.placeholder.com/150x150" width="5" height="5" >Лариса Роговая</div>
-          <ul class="catalog__card__tags tags">
+          <ul class="catalog-card__tags tags">
             <li class="tags__item">#образование</li>
             <li class="tags__item">#карьера</li>
             <li class="tags__item">#учеба</li>
@@ -179,14 +180,14 @@
             <span class="catalog-card__like-count">23</span>
           </div>
           <div class="catalog-card__want">
-            <p class="catalog-card__want-text cart-text">хочет посетить:</p>
+            <p class="catalog-card__want-text card-text">хочет посетить:</p>
             <ul class="catalog-card__want-list want-travel">
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Великобритания</li>
               <li class="want-travel__item"><img class="want-travel__item--flag" src="https://via.placeholder.com/150x150" width="26" height="18">Германия</li>
             </ul>
           </div>
           <div class="catalog-card__transport">
-            <p class="catalog-card__transport-text cart-text">транспорт:</p>
+            <p class="catalog-card__transport-text card-text">транспорт:</p>
             <ul class="catalog-card__icons transport-icons">
               <li class="transport-icons__plane--active"></li>
               <li class="transport-icons__train--active"></li>
@@ -194,7 +195,7 @@
               <li class="transport-icons__foot"></li>
             </ul>
           </div>
-          <p class="catalog-card__level-text cart-text">левел:</p>
+          <p class="catalog-card__level-text card-text">левел:</p>
           <div class="catalog-card__level circle-level">
             <div class="circle-level__number">50</div>
             <hr class="circle-level__line">
