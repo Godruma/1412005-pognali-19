@@ -1,17 +1,43 @@
-.hero-block__wrapper {
-  //background-color: @main-bg-color;
-  //background-image: @traveller;
-  width: 320px;
-  //height: 255px;
-  margin-top: -245px;
+.hero-block {
   background-color: @main-bg-color;
+  min-height: 407px;
 }
 
 .hero-block__title {
+  margin: 0;
   font-weight: bolder;
   font-size: 36px;
   line-height: 40px;
   font-family: @main-font-bold;
   color: white;
   text-align: center;
+}
+
+.hero-block__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.hero-block__globe {
+  width: 320px;
+  height: 260px;
+  background-image: @globe;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
+
+.hero-block__man {
+  width: 320px;
+  height: 255px;
+  background-image: @traveller;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  margin-top: -260px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .hero-block__buttons {
+    display: none;
+  }
 }

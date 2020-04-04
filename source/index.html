@@ -2,38 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="wigth=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo" href="#"></a>
-      <img class="page-header__logo-image" width="100" height="20" src="https://via.placeholder.com/150x150" alt="Погнали - поиск попутчиков онлайн">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" width="100" height="20" src="img/logo-mobile-white@1x.png" alt="Погнали - поиск попутчиков онлайн"></a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <span class="main-nav__line-decor"></span>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="#">О сервисе</a></li>
-            <li class="site-list__item"><a href="catalog.html">Направления</a></li>
-            <li class="site-list__item"><a href="form.html">Попутчики</a></li>
-          </ul>
-          <div class="main-nav__buttons">
-            <button class="main-nav__call" type="button">8 800 555-86-28</button>
-            <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
-            <button class="main-nav__authorization" type="button">Авторизация</button>
-          </div>
-          <div class="main-nav__social social-icon">
-            <ul>
-              <li class="social-icon__item--fb"></li>
-              <li class="social-icon__item--vk"></li>
-              <li class="social-icon__item--insta"></li>
+        <nav class="main-nav">
+          <a class="main-nav__toggle"><img class="main-nav__toggle--button" src="img/menu.svg" width="25" height="11"></a>
+          <div class="main-nav__wrapper hidden">
+            <span class="main-nav__line-decor"></span>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a href="#">О сервисе</a></li>
+              <li class="site-list__item"><a href="catalog.html">Направления</a></li>
+              <li class="site-list__item"><a href="form.html">Попутчики</a></li>
             </ul>
+            <div class="main-nav__buttons">
+              <button class="main-nav__call" type="button">8 800 555-86-28</button>
+              <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
+              <button class="main-nav__authorization" type="button">Авторизация</button>
+            </div>
+            <div class="main-nav__social social-icon">
+              <ul>
+                <li class="social-icon__item--fb"></li>
+                <li class="social-icon__item--vk"></li>
+                <li class="social-icon__item--insta"></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -41,10 +45,8 @@
       <section class="hero-block">
         <div class="hero-block__wrapper">
           <h1 class="hero-block__title">В путешествие с крутыми попутчиками!</h1>
-          <div class="hero-block__image hero-image">
-            <div class="hero-image__tablet"></div>
-            <div class="hero-image__man"></div>
-          </div>
+          <div class="hero-block__globe"></div>
+          <div class="hero-block__man"></div>
           <div class="main-nav__buttons hero-block__buttons">
             <button class="main-nav__call" type="button">8 800 555-86-28</button>
             <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
