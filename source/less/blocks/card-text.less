@@ -1,8 +1,18 @@
+.card-text {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: content;
+}
+
 .card-text__title {
   color: #161c35;
   font-size: 21px;
   line-height: 21px;
   font-family: @main-font-bold;
+  margin-bottom: 0;
+  padding-top: 7px;
 }
 
 .card-text__subtitle {
@@ -10,6 +20,7 @@
   font-size: 16px;
   line-height: 18px;
   font-family: @main-font-medium;
+  margin-top: 0;
 }
 
 .card-text__number {
@@ -17,4 +28,7 @@
   font-size: 16px;
   line-height: 30px;
   font-family: @main-font-medium;
+  margin-top: -60px;
+  padding-right: 23px;
+  align-self: flex-end;
 }
