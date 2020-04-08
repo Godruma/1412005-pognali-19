@@ -1,6 +1,6 @@
 .hero-block {
   background-color: @main-bg-color;
-  min-height: 407px;
+  min-height: 950px;
 }
 
 .hero-block__title {
@@ -28,16 +28,37 @@
 
 .hero-block__man {
   width: 320px;
-  height: 255px;
+  height: 260px;
   background-image: @traveller;
   background-repeat: no-repeat;
-  background-position: 0% 10%;
-  margin-top: -260px;
+  background-position: 62% bottom;
+  margin-top: -257px;
 }
 
+.hero-block__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.hero-block__quote {
+  padding-top: 1px;
+  padding-left: 10px;
+}
+
+.hero-block__features {
+  padding-top: 17px;
+  min-height: 320px;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
 
 @media (min-width: @tablet-width) {
   .hero-block__buttons {
     display: none;
   }
 }
+
