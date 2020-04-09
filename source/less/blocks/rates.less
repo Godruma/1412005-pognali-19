@@ -2,9 +2,47 @@
   background-color: @second-bg-color;
 }
 
+.rates__wrapper {
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.rates__title {
+  flex-grow: 0;
+  width: 100px;
+  padding-left: 25px;
+  padding-top: 50px;
+  line-height: 24px;
+}
+
+.rates__icon {
+  background-image: url("../../img/rates@1x.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  order: -1;
+  position: absolute;
+  right: 105px;
+  margin-top: 35px;
+}
+
+.rates__list {
+  padding-left: 25px;
+  margin-top: 0;
+}
+
 .rates__bussines {
   color: #192144;
   font-size: 16px;
   line-height: 16px;
   font-family: @main-font-bold;
+  padding-left: 25px;
+  text-decoration: none;
+}
+
+.rates__bussines-icon {
+  display: none;
 }
