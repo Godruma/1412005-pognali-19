@@ -15,7 +15,30 @@
   padding-right: 23px;
 }
 
+.show-more--about {
+  width: 274px;
+  height: 81px;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 .show-more__arrow {
   float: right;
   padding-top: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .show-more--destinations {
+    width: 618px;
+    height: 81px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show-more--destinations {
+    width: 274px;
+  }
 }

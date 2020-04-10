@@ -10,9 +10,48 @@
   background-position: center;
 }
 
+@media (min-width: @tablet-width) {
+  .about__wrapper {
+    width: 688px;
+    min-height: 675px;
+    background-image: url("../../img/about-tablet@1x.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__wrapper {
+    width: 1320px;
+    min-height: 750px;
+    background-image: url("../../img/about-desktop@1x.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-top: 123px;
+  }
+}
+
 .about__title {
   padding-left: 47px;
   padding-top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .about__title {
+    padding-left: 35px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__title {
+    padding-left: 70px;
+    padding-top: 128px;
+  }
 }
 
 .about__text {
@@ -23,6 +62,40 @@
   padding-left: 45px;
 }
 
+@media (min-width: @tablet-width) {
+  .about__text {
+    padding-left: 35px;
+  }
+
+  .about__text--bold {
+    padding-left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__text {
+    padding-left: 70px;
+  }
+
+  .about__text--bold {
+    padding-left: 70px;
+  }
+}
+
 .about__btn {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about__btn {
+    display: block;
+    margin-right: 0;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__btn {
+    margin-left: 70px;
+  }
 }
