@@ -10,66 +10,58 @@
   <body>
 
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" width="100" height="20" src="img/logo-mobile-white@1x.png" alt="Погнали - поиск попутчиков онлайн"></a>
-
-        <nav class="main-nav">
-          <a class="main-nav__toggle"><img class="main-nav__toggle--button" src="img/menu.svg" width="25" height="11"></a>
-          <div class="main-nav__wrapper hidden">
-            <span class="main-nav__line-decor"></span>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item"><a href="#">О сервисе</a></li>
-              <li class="site-list__item"><a href="catalog.html">Направления</a></li>
-              <li class="site-list__item"><a href="form.html">Попутчики</a></li>
-            </ul>
-            <div class="main-nav__buttons">
-              <button class="main-nav__call" type="button">8 800 555-86-28</button>
-              <button class="main-nav__mail" type="button">mail@htmlacademy.ru</button>
-              <button class="main-nav__authorization" type="button">Авторизация</button>
-            </div>
-            <div class="main-nav__social social-icon">
-              <ul>
-                <li class="social-icon__item--fb"></li>
-                <li class="social-icon__item--vk"></li>
-                <li class="social-icon__item--insta"></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="#"><img class="main-nav__logo-image" width="100" height="20" src="img/logo-mobile-white@1x.png" alt="Погнали - поиск попутчиков онлайн"></a>
+        <a class="main-nav__toggle"><img class="main-nav__toggle--button" src="img/menu.svg" width="25" height="11"></a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a>----</a></li>
+          <li class="site-list__item"><a href="#">О сервисе</a></li>
+          <li class="site-list__item"><a href="catalog.html">Направления</a></li>
+          <li class="site-list__item"><a href="form.html">Попутчики</a></li>
+        </ul>
+        <div class="main-nav__buttons">
+          <button class="main-nav__call buttons__call" type="button">8 800 555-86-28</button>
+          <button class="main-nav__mail buttons__mail" type="button">mail@htmlacademy.ru</button>
+          <button class="main-nav__authorization buttons__authorization" type="button">Авторизация</button>
+        </div>
+        <div class="main-nav__social social-icon">
+            <div class="social-icon__item--fb"></div>
+            <div class="social-icon__item--vk"></div>
+            <div class="social-icon__item--insta"></div>
+        </div>
+      </nav>
     </header>
 
     <main class="page-main">
-
       <section class="hero-block">
         <div class="hero-block__wrapper">
-          <h1 class="hero-block__title">В путешествие <br> с крутыми <br>попутчиками!</h1>
-          <div class="hero-block__man"></div>
-          <div class="hero-block__buttons buttons">
-            <button class="buttons__call" type="button"></button>
-            <button class="buttons__mail" type="button"></button>
-            <button class="buttons__authorization" type="button">Авторизация</button>
+          <div class="hero-block__contaner">
+            <h1 class="hero-block__title">В путешествие с крутыми попутчиками!</h1>
+            <div class="hero-block__buttons buttons">
+              <button class="buttons__call" type="button"></button>
+              <button class="buttons__mail" type="button"></button>
+              <button class="buttons__authorization" type="button">Авторизация</button>
+            </div>
+            <blockquote class="hero-block__quote">
+              <p class="hero-block__quote--text text-info">
+                «Лучшее приложение, что я видел в жизни!»
+              </p>
+              <p class="hero-block__quote--author text-info--bold">
+                Мурат Эльтазин главный редактор газеты «гаджетлайф»
+              </p>
+            </blockquote>
           </div>
-          <blockquote class="hero-block__quote">
-            <p class="hero-block__quote--text text-info">
-              «Лучшее приложение, <br>что я видел в жизни!»
-            </p>
-            <p class="hero-block__quote--author text-info--bold">
-              Мурат Эльтазин <br>главный редактор газеты <br>«гаджетлайф»
-            </p>
-          </blockquote>
         </div>
       </section>
 
       <div class="features ">
         <div class="features__wrapper">
-          <ul class="hero-features">
-            <li class="hero-features__item">Выберите <br>направление <br><span class="hero-features__number">1</span></li>
-            <li class="hero-features__item">Изучите идеи <br>путешественников <br><span class="hero-features__number">2</span></li>
-            <li class="hero-features__item">Находите тех, <br>кто похож на вас <br><span class="hero-features__number">3</span></li>
-            <li class="hero-features__item">Путешествуйте <br>вместе! <br><span class="hero-features__number">4</span></li>
-          </ul>
+          <div class="features__contaner">
+            <div class="features__item">Выберите направление<span class="features__number">1</span></div>
+            <div class="features__item">Изучите идеи путешественников<span class="features__number">2</span></div>
+            <div class="features__item">Находите тех, кто похож на вас<span class="features__number">3</span></div>
+            <div class="features__item">Путешествуйте вместе!<span class="features__number">4</span></div>
+          </div>
         </div>
       </div>
 
