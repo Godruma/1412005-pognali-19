@@ -22,16 +22,17 @@
   background-image: url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-origin: padding-box;
-  background-position: center -97px;
-  background-size: cover;
+  background-position: center -93px;
 }
 
 @media (min-width: @tablet-width) {
   .hero-block__wrapper {
     width: 768px;
+    min-height: 868px;
     background-image: url("../../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center 290px;
+    background-size: 1479px 612px;
+    background-position: center bottom;
   }
 }
 
@@ -40,7 +41,8 @@
     width: 1440px;
     background-image: url("../../img/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -95px;
+    background-size: auto;
+    background-position: center bottom 230px;
   }
 }
 
@@ -55,10 +57,10 @@
 
 @media (min-width: @tablet-width) {
   .hero-block__contaner {
-    min-height: 939px;
+    min-height: 730px;
     background-image: url("../../img/traveller-illustration-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right 113px bottom;
   }
 }
 
@@ -68,7 +70,7 @@
     min-height: 695px;
     background-image: url("../../img/traveller-illustration-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: right 310px top;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -91,7 +93,7 @@
   .hero-block__title {
     font-size: 60px;
     line-height: 70px;
-    padding-top: 67px;
+    padding-top: 37px;
     padding-left: 170px;
     padding-right: 170px;
   }
@@ -101,35 +103,12 @@
   .hero-block__title {
     font-size: 60px;
     line-height: 70px;
-    padding-top: 114px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 99px;
+    padding-left: 32px;
+    padding-right: 40px;
     text-align: left;
-    z-index: 1;
   }
 }
-
-// @media (min-width: @tablet-width) {
-//   .hero-block__man {
-//     width: 372px;
-//     height: 451px;
-//     margin-top: 30px;
-//     padding-left: 180px;
-//     align-self: center;
-//   }
-// }
-
-// @media (min-width: @desktop-width) {
-//   .hero-block__man {
-//     width: 600px;
-//     height: 640px;
-//     background-image: url("../../img/traveller-illustration-desktop@1x.png");
-//     background-repeat: no-repeat;
-//     background-position: left bottom;
-//     padding-left: 0;
-//     margin-top: 15px;
-//   }
-// }
 
 .hero-block__buttons {
   display: flex;
@@ -160,18 +139,23 @@
 
 @media (min-width: @tablet-width) {
   .hero-block__quote {
-    padding-left: 33px;
-    //margin-top: -423px;
+    margin-top: 59px;
+    padding-left: 75px;
+    padding-right: 430px;
   }
 
   .hero-block__quote--author {
-    padding-top: 18px;
+    padding-top: 15px;
+    padding-right: 40px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .hero-block__quote {
-    margin-top: 97px;
+    margin-top: 83px;
+    margin-left: 440px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .hero-block__quote--author {
