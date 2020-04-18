@@ -4,18 +4,64 @@
 
 .rates__wrapper {
   width: 270px;
+  min-height: 450px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__wrapper {
+    width: 612px;
+    min-height: 556px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates__wrapper {
+    width: 1175px;
+    min-height: 750px;
+  }
+}
+
+.rates__contaner {
+  width: 245px;
+  margin-left: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__contaner {
+    width: 688px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates__contaner {
+    width: 1175px;
+  }
 }
 
 .rates__title {
-  flex-grow: 0;
   width: 100px;
-  padding-left: 25px;
   padding-top: 50px;
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__title {
+    width: auto;
+    text-align: center;
+    padding-top: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates__title {
+    padding-top: 118px;
+  }
 }
 
 .rates__icon {
@@ -23,26 +69,93 @@
   background-size: cover;
   width: 100px;
   height: 100px;
-  order: -1;
   position: absolute;
-  right: 105px;
-  margin-top: 35px;
+  top: 36px;
+  right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__icon {
+    position: absolute;
+    top: 407px;
+    right: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates__icon {
+    width: 200px;
+    height: 200px;
+    top: 286px;
+    right: 1px;
+  }
 }
 
 .rates__list {
-  padding-left: 25px;
-  margin-top: 0;
+  width: 245px;
+  padding-top: 44px;
+  margin-bottom: 34px;
 }
 
-.rates__bussines {
+@media (min-width: @tablet-width) {
+  .rates__list {
+    width: 688px;
+    padding-top: 83px;
+    margin-bottom: 34px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates__list {
+    width: 904px;
+    padding-top: 142px;
+    margin-bottom: 34px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .rates__bussines {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.rates__bussines-link {
   color: #192144;
   font-size: 16px;
   line-height: 16px;
   font-family: @main-font-bold;
-  padding-left: 25px;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__bussines-link {
+    color: #132576;
+    font-size: 20px;
+    line-height: 16px;
+  }
 }
 
 .rates__bussines-icon {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .rates__bussines-icon {
+    display: block;
+    width: 67px;
+    height: 67px;
+    background-color: #e2e5f2;
+    border-radius: 40px;
+    text-align: center;
+    margin-right: 22px;
+  }
+
+  .rates__bussines-avatar {
+    margin-top: 20px;
+  }
 }
